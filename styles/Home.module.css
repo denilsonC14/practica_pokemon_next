@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.container {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/024/625/582/large_2x/cute-yellow-mouse-character-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5rem;
+  color: #ffcb05;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px #3d7dca, 4px 4px #003a70;
+  -webkit-text-stroke: 1px #003a70;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.searchInput {
+  width: 80%;
+  max-width: 300px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #3d7dca;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #ffcb05;
+  box-shadow: 0 0 5px rgba(255, 203, 5, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(145deg, #ffeb3b, #ffc107);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 215, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(3deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardContent {
+  padding: 1rem;
+}
+
+.cardTitle {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.2rem;
+  color: #003a70;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cardInfo {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+.cardSubtitle {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.9rem;
+  color: #003a70;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.abilityInfo {
+  margin-bottom: 0.5rem;
+}
+
+.abilityName {
+  font-weight: bold;
+  color: #3d7dca;
+}
+
+.abilityDescription {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
